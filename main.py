@@ -71,7 +71,7 @@ def plot_campaign_data(data):
     st.pyplot(plt)
 
 # Streamlit UI
-st.title("Ad Campaign Analysis Tool")
+st.title("Google Ad Campaign Analysis Tool")
 
 customer_id = st.text_input("Enter Your Customer ID:", "")
 
