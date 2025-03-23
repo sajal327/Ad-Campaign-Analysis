@@ -9,10 +9,10 @@ from google.ads.googleads.client import GoogleAdsClient
 #client = GoogleAdsClient.load_from_storage("google_ads.yaml")
 # Load environment variables from .env file
 # Access the environment variables
-developer_token = os.getenv("GOOGLE_ADS_DEVELOPER_TOKEN")
-client_id = os.getenv("GOOGLE_ADS_CLIENT_ID")
-client_secret = os.getenv("GOOGLE_ADS_CLIENT_SECRET")
-refresh_token = os.getenv("GOOGLE_ADS_REFRESH_TOKEN")
+developer_token = st.secrets["GOOGLE_ADS_DEVELOPER_TOKEN"]
+client_id = st.secrets["GOOGLE_ADS_CLIENT_ID"]
+client_secret = st.secrets["GOOGLE_ADS_CLIENT_SECRET"]
+refresh_token = st.secrets["GOOGLE_ADS_REFRESH_TOKEN"]
 
 # Create a configuration dictionary directly
 config = {
